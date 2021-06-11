@@ -28,7 +28,7 @@ class _HomeScreenState extends State<HomeScreen> {
         title: Text('Flutter Application'),
       ),
       body: ListView.builder(
-          itemCount: 100,
+          itemCount: posts.length,
           itemBuilder: (context, index) {
             return PostWidget(post: posts[index]);
           }),
